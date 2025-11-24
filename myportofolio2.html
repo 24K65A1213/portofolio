@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #222, #444);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      margin: auto;
+    }
+
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 0.8rem;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00bcd4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+    }
+
+    .info-card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+      color: #00bcd4;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="WhatsApp Image 2025-11-21 at 14.09.51_f8db82f5.jpg" class="profile-img" />
+
+    <h1>Hello, I'm hemanth</h1>
+    <p>Full Stack Developer | Python | Django | React | REST APIs</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a full-stack Python developer with strong experience in Django, REST API development,
+      and frontend development using React. I enjoy building scalable backends,
+      crafting clean UI components, and delivering complete end-to-end applications.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="info-card">
+      <h3>B.Tech in Information Technology</h3>
+      <p><strong>College:</strong> Sasi institute of technology and engineering</p>
+      <p><strong>Year:</strong> 3rd Year</p>
+    </div>
+    <div class="info-card">
+      <h3>sasi school</h3>
+      <p><strong>Passout Year:</strong> 2022</p>
+      <p><strong>CGPA:</strong> 9.2</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="info-card">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Java & Spring Boot</li>
+        <li>Python & Django REST Framework</li>
+        <li>React & Modern JavaScript (ES6+)</li>
+        <li>Database Management (MySQL, PostgreSQL)</li>
+        <li>REST API Design & Integration</li>
+        <li>Version Control (Git & GitHub)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="info-card">
+      <h3>Personal Interests</h3>
+      <ul>
+        <li>Reading tech blogs & exploring new frameworks</li>
+        <li>Playing chess and solving puzzles</li>
+        <li>Photography & editing</li>
+        <li>Listening to music</li>
+        <li>Traveling and exploring new cultures</li>
+        <li>Gaming (strategy & adventure)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Django Blog Application</h3>
+        <p>A full-stack blog app with authentication, admin panel, and REST endpoints.</p>
+      </div>
+      <div class="project-card">
+        <h3>Task Manager API</h3>
+        <p>Python + Django REST Framework project with JWT auth.</p>
+      </div>
+      <div class="project-card">
+        <h3>React Frontend Dashboard</h3>
+        <p>Interactive dashboard consuming Python REST API services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 hemanth. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for contacting me! I will reach out shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
